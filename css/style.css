@@ -1,8 +1,11 @@
+@import url(variable.css);
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    outline: 1px solid tomato;
 }
 
 .header {
@@ -14,6 +17,10 @@ width: 100%;
 padding-left: 19px;
 padding-right: 19px;
 padding-top: 5px;
+
+   photo{
+    width: 50px;
+   }
 }
 .ul_menu{
 display: flex;
@@ -24,11 +31,33 @@ padding-right: 100px;
 .ul_menu li{
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
+    color: var(--font-color-1);
 }
 
 .section_home
 {
- background-image: linear-gradient(#376e4072, #071917d5), url(../storage/img/Rectangle\ 1.png);
+ background-image: linear-gradient(var(--color-gradient-1), var(--color-gradient-2) 100%), var(--banner-1);
  background-size: cover;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 135svh;
+}
+.article_home{
+    position: relative;
+    display: flex;
+    width: 523px;
+    top : 23.05vw;
+    left: 20.138vw;
+    height: 500px;
+    gap: 5px;
+    flex-direction: column;
+    color: var(--font-color-1);
 
+}
+.article_home span{
+    font-size: 40px;
+}
+.article_home h1{
+    font-size: 80px;
 }
