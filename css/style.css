@@ -1,4 +1,4 @@
-@import url(variable.css);
+@import url('../css/variable.css');
 
 *{
     padding: 0;
@@ -97,11 +97,11 @@ font-family: "Montserrat-SemiBold";
         left: 0;
     }
 
-    .article__home p{
+    .article_home p{
         
     }
 
-    .article__home h1{
+    .article_home h1{
         font-size: 70px;
     }
 
@@ -115,3 +115,81 @@ font-family: "Montserrat-SemiBold";
         object-fit: contain;
     }
 }
+@media(max-widht: 574px){
+    .header{
+        justify-content: normal;
+
+    }
+    .div_menu{
+        width: 100%;
+
+    }
+    .ul_menu{
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+
+    }
+    .article_home{
+        top:25svh;
+        }   
+    .article_home h1{
+        font-size: 60px;
+    }
+    .section_home{
+        display: flex;
+        justify-content: normal;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 95svh;      
+
+    }
+}
+
+
+.section_imagen1{
+    display: flex;
+    background-color: var(--color-3);
+    padding-top: 32px;
+    flex-direction: column;
+
+
+    img{
+        background-color: var(--color-3);
+        justify-content: center;
+        padding-left: 2svw;
+        padding-right: 2svw;
+        width: 99svw;
+    }
+
+    h1{
+
+        color: var(--color-1);
+        position: absolute;
+        padding-left: 16svh;
+        padding-top: 54svw;
+        font-size: 6svh;
+        font-family: "Montserrat-SemiBold";
+
+    }
+}
+    @media (max-width: 960px)
+    {
+    .section_imagen1{
+        padding-top: 24px;
+    }
+    .section_imagen1 img {
+
+        width: 100%;
+        padding-left: 1svw;
+        padding-right: 3svw;
+    }
+
+
+    .section_imagen1 h1{
+        font-size: 2svh;
+        padding-top: 53svw;
+        padding-left: 10svw;
+
+    }
+    }
