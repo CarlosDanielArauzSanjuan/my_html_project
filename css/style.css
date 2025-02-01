@@ -317,4 +317,25 @@ font-family: "Montserrat-SemiBold";
     flex-direction: row;
     height: 68svh;
     overflow-x: scroll;
+
+     
+    & > .carrousel_item {
+        flex: 1;
+        flex-grow: 1;
+        min-width: 20svw;
+        background-color: #145E2A;
+        margin: 2svh;
+        border-radius: 35px;
+        
+      }   
+  button{
+    font-family: "Montserrat_Regular";
+    font-size: 3svh;
+    border-radius: 15px;
+    margin-left: 11svh;
+    height: 48px;
+    width: 15svh;
+  }
 }
+
+
