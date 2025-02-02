@@ -319,7 +319,7 @@ font-family: "Montserrat-SemiBold";
     overflow-x: scroll;
 
      
-    & > .carrousel_item {
+    & > .carrousel_items{
         flex: 1;
         flex-grow: 1;
         min-width: 20svw;
@@ -337,5 +337,70 @@ font-family: "Montserrat-SemiBold";
     width: 15svh;
   }
 }
+.carrousel-items {
+    padding-left: 1svw;
+    font-size: 1svw;
+    font-family: "Montserrat-SemiBold";
+}
+
+img{
+    padding-top: 1svw;
+    width: 18svw;
+    height: 26svh;
+    border-radius: 30px;
+}
+
+p{
+    padding-top: 2svh;
+    padding-block-end: 2svh;
+}
+
+.div_a{
+    height: 5svh;
+    width: 8svw;
+    background-color: #D9D9D9;
+    border-radius: 24px;
+    text-align: center;
+}
+
+div a{
+    padding-top: 2svh;
+    color: black;
+    font-family: "Montserrat-SemiBold";
+    font-size: 1svw;
+    text-decoration: none;
+    
+}
+@media (max-width: 960px){
+    .carrousel{
+        button{
+            font-family: "Montserrat_Regular";
+            font-size: 15px;
+            border-radius:30px;
+            margin-left: 40px;
+            height: 4svh;
+          }
+    }   
+  }
+  @media (max-width: 576px) {
+    .titleCarrousel h1{
+        font-size: 3svh;
+        padding-top: 1svh;
+    }
+}
+    .carousel{
+        height: 45svh;
+        & > .carrousel_items{
+            margin: 1svh;
+            border-radius: 35px;
+            width: 45svw;
+            min-width: 50svw;
+        }
 
 
+        .carousel-item {
+            padding-left: 1svw;
+            font-size: 2.5svw;
+            font-family: "Montserrat-SemiBold";
+        }
+    }
